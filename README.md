@@ -40,6 +40,22 @@ Aplikasi ini merupakan sistem manajemen dan eksplorasi buku berbasis web, dikemb
 - Unit Test: validasi buku, logika auth  
 - Integration Test: rating, komentar, filter  
 
+📄 **Catatan Penggunaan Library Pihak Ketiga**
+- Chart.js: Untuk menampilkan grafik statistik di dashboard
+- Tailwind CSS: Untuk styling cepat dan responsif
+- Laravel Breeze: Untuk implementasi autentikasi default dan verifikasi email
+- Mailtrap: Untuk pengujian pengiriman email secara aman selama development
+
+⭐ **Fitur Tambahan**
+- Fitur komentar pada detail buku
+- Dashboard interaktif
+- Validasi form lengkap dan error handling
+- Unit dan integrasi testing mencakup core logic
+
+👨‍💻 **Penulis**
+- Nama: Satria Agysta
+- Role: Fullstack Developer (Laravel + PostgreSQL)
+
 ## ⚙️ Teknologi
 
 - **Framework**: Laravel 10.x  
@@ -113,19 +129,3 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```bash
 php artisan test
 ```
-
-👨‍💻 **Penulis**
-- Nama: Satria Agysta
-- Role: Fullstack Developer (Laravel + PostgreSQL)
-
-📄 **Catatan Penggunaan Library Pihak Ketiga**
-- Chart.js: Untuk menampilkan grafik statistik di dashboard
-- Tailwind CSS: Untuk styling cepat dan responsif
-- Laravel Breeze: Untuk implementasi autentikasi default dan verifikasi email
-- Mailtrap: Untuk pengujian pengiriman email secara aman selama development
-
-⭐ **Fitur Tambahan**
-- Fitur komentar pada detail buku
-- Dashboard interaktif
-- Validasi form lengkap dan error handling
-- Unit dan integrasi testing mencakup core logic
