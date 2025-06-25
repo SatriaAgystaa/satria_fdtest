@@ -15,16 +15,15 @@ class RatingController extends Controller
             'value' => 'required|integer|min:1|max:5',
         ]);
 
-        $existing = Rating::where('book_id', $book->id)->where('user_id', Auth::id())->first();
-        if ($existing) {
-            return back()->with('error', 'Kamu sudah memberikan rating untuk buku ini.');
-        }
-
-        Rating::create([
-            'book_id' => $book->id,
-            'user_id' => Auth::id(),
-            'value' => $request->value,
-        ]);
+        Rating::updateOrCreate(
+            [
+                'book_id' => $book->id,
+                'user_id' => Auth::id(),
+            ],
+            [
+                'value' => $request->value,
+            ]
+        );
 
         return back()->with('success', 'Rating berhasil dikirim.');
     }

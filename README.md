@@ -73,12 +73,12 @@ php artisan key:generate
 ### 
 4. Konfigurasi Database (PostgreSQL)
 ```bash
-sed -i 's/DB_CONNECTION=.*/DB_CONNECTION=pgsql/' .env
-sed -i 's/DB_HOST=.*/DB_HOST=127.0.0.1/' .env
-sed -i 's/DB_PORT=.*/DB_PORT=5432/' .env
-sed -i 's/DB_DATABASE=.*/DB_DATABASE=satria_fdtest/' .env
-sed -i 's/DB_USERNAME=.*/DB_USERNAME=postgres/' .env
-sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=your_password/' .env
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=satria_fdtest
+DB_USERNAME=postgres
+DB_PASSWORD=220807
 ```
 
 ### 5. Jalankan Migrasi & Seeder
@@ -99,14 +99,14 @@ npm run dev
 
 ### 8. Konfigurasi Mailtrap (Testing Email)
 ```bash
-sed -i 's/MAIL_MAILER=.*/MAIL_MAILER=smtp/' .env
-sed -i 's/MAIL_HOST=.*/MAIL_HOST=sandbox.smtp.mailtrap.io/' .env
-sed -i 's/MAIL_PORT=.*/MAIL_PORT=2525/' .env
-sed -i 's/MAIL_USERNAME=.*/MAIL_USERNAME=your_mailtrap_username/' .env
-sed -i 's/MAIL_PASSWORD=.*/MAIL_PASSWORD=your_mailtrap_password/' .env
-sed -i 's/MAIL_ENCRYPTION=.*/MAIL_ENCRYPTION=tls/' .env
-sed -i 's/MAIL_FROM_ADDRESS=.*/MAIL_FROM_ADDRESS=hello@example.com/' .env
-sed -i 's/MAIL_FROM_NAME=.*/MAIL_FROM_NAME="${APP_NAME}"/' .env
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=666f108f289160
+MAIL_PASSWORD=79d937fb335863
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=hello@example.com
+MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 🧪 Menjalankan Testing
